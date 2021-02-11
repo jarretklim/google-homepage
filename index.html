@@ -1,0 +1,215 @@
+<style>
+/* make it all fit to page*/
+.flex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+/* main */
+.center {
+    margin: auto;
+}
+.google {
+    margin-top: 180px;
+   margin-bottom: 20px;
+   position: relative;
+   bottom: 100px;
+    }
+input {
+    height: 40px;
+    width: 500px;
+    padding: 0px, 40px;
+    border-width: 1pt;
+    border-style: solid;
+    border-color: rgba(201, 202, 201, 0.973);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 150px;
+    }
+form {
+        margin: auto;
+}
+input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+.micbutton
+{
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: auto;
+    transform: translate(900%,-220%);
+    border: none;
+    background: transparent;
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    bottom: 150px;
+}
+.magbutton {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: right;
+    transform: translate(100%,-390%);
+    border: none;
+    background: transparent;
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    bottom: 150px;
+}
+/* List items */
+li {
+    display: inline;
+    font-family: arial, sans-serif;
+    font-size: 14px; 
+    margin: 5px;
+    vertical-align: middle;
+}
+li a {
+    text-decoration: none;
+}
+li a {
+    color: rgb(68, 68, 70);
+    text-decoration: none; 
+    padding-right: 5px;
+  }
+li a:hover {
+     text-decoration: underline;
+  }
+/* footer */
+footer {
+    background-color:#f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: .5pt;
+    border-style: solid;
+    border-color: rgb(236, 235, 235)
+}
+.grey {
+    color: rgb(106, 106, 107);
+}
+.footerright {
+    float: right;
+    padding-right: 20px;
+}
+.footerleft {
+    float: left;
+    padding-left: 20px;
+}
+/* Nav bar */
+.nav {
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.leftalign {
+    float: left;
+}
+.rightalign {
+    float: right;
+}
+/* buttons */
+.searchbutton {
+    background-color:#f1ededec;
+    width: 130px;
+    height: 35px;
+    color: rgb(106, 106, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border-radius: 4px;
+    border: none;
+    margin: none;
+    position: relative;
+    bottom: 200px;
+    left: 90px;
+    
+}
+.signin {
+    background-color:#4285f4;
+    width: 75px;
+    height: 30px;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+ }
+ .searchbutton:hover {
+    color: black;
+    border: solid rgb(206, 206, 207) .5px;
+}
+</style>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="flex"> 
+            <header>
+                <nav class="nav">
+                    <ul class="leftalign">
+                        <li>About</li>
+                        <li>Store</li>
+                    </ul>
+                    <ul class="rightalign">
+                        <li>Gmail</li>
+                        <li>Images</li>
+                        <li>
+                            <a id="none" href="https://www.google.com/intl/en/about/products?tab=wh"
+                            title="apps" class="material-icons">apps</a>
+                        </li>
+                        <li>Sign In</li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="center">
+                <img class="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+
+            </main>
+            <form>
+                <input type="text" id="icons">
+                <button type="button" class="micbutton"></button>
+                <button type="button" class="magbutton"></button>
+                <ul class="center">
+                    <li>
+                        <button class="searchbutton">Google Search</button>
+                    </li>
+                    <li>
+                        <button class="searchbutton">I'm Feeling Lucky</button>
+                    </li>
+                </ul>
+                <footer>
+                    <ul class="footerleft">
+                        <li>Advertising</li>
+                        <li>Business</li>
+                        <li>How Search Works</li>
+                    </ul>
+                    <ul class="footerright">
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Settings</li>
+                    </ul>
+                </footer>
+            </form>
+
+        </div>
+
+        
+    
+    </body>
+</html>
